@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #33363b;
+            color: #333333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 0;
+        }
+
+        .resume-container {
+            width: 850px;
+            min-height: 1100px;
+            background-color: #ffffff;
+            display: flex;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .sidebar {
+            width: 32%;
+            background-color: #000000;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .profile-img-container {
+            width: 100%;
+            height: auto;
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 80%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .sidebar-content {
+            padding: 25px 20px;
+        }
+
+        .contact-list {
+            list-style: none;
+            margin-bottom: 35px;
+            font-size: 0.85rem;
+        }
+
+        .contact-list li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            word-break: break-all;
+        }
+
+        .contact-list i {
+            color: #44bf87;
+            margin-right: 12px;
+            font-size: 1rem;
+            width: 16px;
+            text-align: center;
+        }
+
+        .sidebar-section {
+            margin-bottom: 35px;
+        }
+
+        .sidebar-section h2 {
+            font-size: 1.1rem;
+            text-transform: capitalize;
+            border-bottom: 1px solid #444;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+        }
+
+        .sidebar-section p,
+        .sidebar-section li {
+            font-size: 0.8rem;
+            line-height: 1.4;
+            color: #cccccc;
+            margin-bottom: 10px;
+        }
+
+        .skills-list,
+        .achievements-list {
+            list-style-type: none;
+        }
+
+        .skills-list li,
+        .achievements-list li {
+            position: relative;
+            padding-left: 12px;
+        }
+
+        .skills-list li::before,
+        .achievements-list li::before {
+            content: "•";
+            color: #44bf87;
+            position: absolute;
+            left: 0;
+        }
+
+        .main-content {
+            width: 68%;
+            padding: 40px 35px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header-banner {
+            background-color: #eaeaea;
+            margin: -40px -35px 30px -35px;
+            padding: 30px 35px;
+        }
+
+        .header-banner h1 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 2px;
+        }
+
+        .header-banner .job-title {
+            font-size: 1.2rem;
+            color: #555555;
+        }
+
+        .content-section {
+            margin-bottom: 30px;
+        }
+
+        .content-section h2 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #000000;
+            border-bottom: 1px solid #000000;
+            padding-bottom: 4px;
+            margin-bottom: 15px;
+        }
+
+        .content-section p {
+            font-size: 0.88rem;
+            line-height: 1.5;
+            color: #333333;
+        }
+
+        .grid-row {
+            display: flex;
+            margin-bottom: 15px;
+            font-size: 0.88rem;
+            line-height: 1.4;
+        }
+
+        .grid-left {
+            width: 30%;
+            padding-right: 15px;
+        }
+
+        .grid-right {
+            width: 70%;
+        }
+
+        .text-muted {
+            color: #666666;
+        }
+
+        .reference-contact p {
+            margin-bottom: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="resume-container">
+
+        <div class="sidebar">
+            <div class="img-container">
+                <img src="/uaja photo.jpeg" class="profile-img">
+            </div>
+
+            <div class="sidebar-content">
+                <ul class="contact-list">
+                    <li><i class="fa-solid fa-envelope"></i> uajachau57@gmail.com</li>
+                    <li><i class="fa-duotone fa-thin fa-phone"></i> +91-8128493993</li>
+                    <li><i class="fa-brands fa-linkedin"></i> ://linkedin.com</li>
+                    <li><i class="fa-solid fa-globe"></i> yourportfolio.com</li>
+                </ul>
+
+                <section class="sidebar-section">
+                    <h2>Key Skills</h2>
+                    <ul class="Skills-list">
+                        <li><strong>Technical:</strong> html, css, javascript</li>
+                        <li><strong>Soft Skills:</strong> communication, teamwork, problem-solving</li>
+                    </ul>
+                </section>
+
+                <section class="sidebar-section">
+                    <h2>Extras / Hobbies</h2>
+                    <p><strong>Volunteer work:</strong> Tech Literacy program for underprivileged students</p>
+                    <p><strong>Hobbies:</strong> Reading, Dancing, singing, Blogging</p>
+                </section>
+
+                <section class="sidebar-section">
+                    <h2>Achievements</h2>
+                    <ul class="achievements-list">
+                        <li>Awarded "Best Team Player" in University Tech Fest - 2021</li>
+                        <li>Led a 4-member team in a data analytics hackathon; secured 2nd place</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <main class="main-content">
+            <header class="header-banner">
+                <h1>Chau Uaja Kantibhai</h1>
+                <p class="job-title">Web development</p>
+            </header>
+
+            <section class="content-section">
+                <h2>Objective / Summary</h2>
+                <p>To obtain a challenging position where I can effectively contribute my skills and which
+                    offersmelearning,jobsatisfaction&growthsothatIcancontributemypracticeandknowledge
+                    positively to the organization and get enhanced in return.</p>
+            </section>
+
+            <section class="content-section">
+                <h2>Education</h2>
+                <div class="grid-row">
+                    <div class="grid-left">
+                        <p><strong>Dr.subhash mahila college</strong></p>
+                        <p class="text-muted">2027</p>
+                    </div>
+                    <div class="grid-right">
+                        <p><strong>B.com</strong></p>
+                    </div>
+                </div>
+
+                <div class="grid-row">
+                    <div class="grid-left">
+                        <p>Certifications:</p>
+                    </div>
+                    <div class="grid-right">
+                        <p><strong>Google Web development, 2025</strong></p>
+                    </div>
+                </div>
+
+                <div class="grid-row">
+                    <div class="grid-left">
+                        <p>Relevant Coursework:</p>
+                    </div>
+                    <div class="grid-right">
+                        <p>Html, Css, javascript Programming Language Learning</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="content-section">
+                <h2>Work Experience / Projects</h2>
+
+                <div class="grid-row">
+                    <div class="grid-left">
+                        <p class="text-muted">dec 2025 - sep 2026</p>
+                    </div>
+
+                    <div class="grid-right">
+                        <p><strong>Intern xyz Corp</strong></p>
+                        <p>Developed Python scripts to automate data cleaning, reducing processing time by 20%. Created
+                            dashboards using
+                            Tableau for data visualization.</p>
+                    </div>
+                </div>
+
+                <div class="grid-row">
+                    <div class="grid-left">
+                        <p class="text-muted">2021</p>
+                    </div>
+                    <div class="grid-right">
+                        <p><strong>Academic Project – Student Performance Analysis</strong></p>
+                        <p>Analyzed student dataset using SQL and Python to predict performance trends. Presented
+                            findings to faculty;
+                            received recognition for actionable insights.</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="content-section">
+                <h2>Reference</h2>
+                <div class="grid-row">
+                    <div class="grid-left">
+                        <p><strong>Jordan Steven</strong></p>
+                        <p class="text-muted">Senior Manager</p>
+                    </div>
+                    <div class="grid-right reference-contact">
+                        <p>+92 330-8728087</p>
+                        <p>jordansteven@gmail.com</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
